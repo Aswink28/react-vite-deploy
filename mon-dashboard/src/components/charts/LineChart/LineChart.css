@@ -1,0 +1,22 @@
+.line-chart-container {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .line-chart-container h5 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .chart-wrapper {
+    flex: 1;
+    position: relative;
+  }
+  

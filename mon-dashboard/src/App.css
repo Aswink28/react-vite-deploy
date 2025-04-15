@@ -1,0 +1,77 @@
+.app-container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: #4B2C69; 
+}
+
+.dashboard-header h2 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  color: white;
+  padding: 15px 0;
+  border-bottom: 2px solid #9c4dca;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+
+.client-group-section {
+  grid-row: 1 / span 2;
+  /* Add margin to align with header */
+  margin-left: 10px;
+}
+
+.metrics-section {
+  grid-column: 2;
+}
+
+.charts-section {
+  /* Span both columns to align with left margin */
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 400px 1fr; /* Match client group width */
+  gap: 20px;
+  /* Add left margin to align with header */
+  margin-left: 10px;
+}
+
+.pie-chart-container,
+.bar-chart-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 390px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .client-group-section {
+    grid-row: auto;
+    margin-left: 0;
+  }
+  
+  .charts-section {
+    grid-column: 1;
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+}

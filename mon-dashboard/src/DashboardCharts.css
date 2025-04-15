@@ -1,0 +1,36 @@
+.dashboard-charts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .chart-row {
+    display: flex;
+    gap: 20px;
+    height: 300px;
+  }
+  
+  .chart-col {
+    flex: 1;
+  }
+  
+  .chart-col.left {
+    flex: 1;
+  }
+  
+  .chart-col.right {
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .chart-row {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    .chart-col {
+      height: 300px;
+    }
+  }
